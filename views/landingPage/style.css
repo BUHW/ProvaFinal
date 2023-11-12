@@ -523,6 +523,7 @@ footer .last{
         align-items: center;
         flex-direction: column;
         height: calc(80vh - 70px);
+        overflow-y: auto;
     }
 
     #nav.active .menu li{
