@@ -56,6 +56,15 @@ header {
     padding: 10px;
 }
 
+.mobile-menu{
+    width: 100%;
+    display: flex;
+}
+
+.btn-mobile{
+    display: none;
+}
+
 nav {
     background-color: #071a45;
     width: 100%;
@@ -438,6 +447,75 @@ footer .last{
 }
 
 /* responsive */
+
+@media screen and (max-width: 710px) {
+    .btn-mobile{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #071a45;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+    }
+
+    .btn-mobile{
+        background-color: transparent;
+        color: var(--laranja);
+        border: 2px solid var(--laranja);
+        border-radius: 5px;
+        width: 5rem;
+        padding: 0.5rem;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 700;
+        transition: .7s;
+    }
+
+    .btn-mobile:hover{
+        background-color: var(--laranja);
+        color: var(--azul);
+    }
+
+    #nav.active .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc(50vh - 70px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #nav.active .menu li{
+        width: 100%;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #nav.active .menu li a{
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav.active .menu li a i{
+        margin-right: 0.5rem;
+    }
+}
 
 @media(max-width: 576px){
     nav ul li{
