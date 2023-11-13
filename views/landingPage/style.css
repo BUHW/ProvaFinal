@@ -540,6 +540,16 @@ footer .last{
     #nav.active .menu li a i{
         margin-right: 0.5rem;
     }
+
+    /* Responsividade do sobre nós */
+
+    .about-content .left{
+        display: none;
+    }
+
+    .about-content .right{
+        width: 100%;
+    }
 }
 
 @media(max-width: 576px){
@@ -601,8 +611,8 @@ footer .last{
         height: 100%;
     }
 
-    .features-card-block{
-        height: 100%;
+    .features .features-card-block{
+        height: 90%;
         display: flex;
         flex-direction: column;
     }
