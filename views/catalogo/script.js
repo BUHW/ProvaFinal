@@ -43,21 +43,21 @@ inputPesquisa.addEventListener('keydown', function (event) {
 
 // botao whats
 
-document.getElementById('whatsappIcon').addEventListener('click', function() {
+document.getElementById('whatsappIcon').addEventListener('click', function () {
     // Mostrar o modal quando o ícone do WhatsApp for clicado
     document.getElementById('whatsappModal').style.display = 'block';
 });
 
-document.getElementById('closeModal').addEventListener('click', function() {
+document.getElementById('closeModal').addEventListener('click', function () {
     // Fechar o modal quando o botão "Fechar" for clicado
     document.getElementById('whatsappModal').style.display = 'none';
 });
 
-document.getElementById('numeroWhatsapp').addEventListener('change', function() {
+document.getElementById('numeroWhatsapp').addEventListener('change', function () {
     var selectedNumber = this.value;
     var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
     var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
-    
+
     // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
     var whatsappIcon = document.getElementById('whatsappIcon');
     whatsappIcon.setAttribute('href', whatsappLink);
@@ -130,9 +130,43 @@ document.getElementById("btn-porcas").addEventListener("click", function () {
 
 const btnMobile = document.getElementById('btnMobile');
 
-function toggleMenu(){
+function toggleMenu() {
     const nav = document.getElementById('nav');
     nav.classList.toggle('active')
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Adiciona um ouvinte de evento a todos os botões com a classe 'adicionarCarrinhoBtn'
+    var adicionarCarrinhoBtns = document.querySelectorAll('.btn-add-carrinho');
+
+    adicionarCarrinhoBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+            // Obtém o ID do item associado ao botão clicado
+            var itemId = event.currentTarget.getAttribute('data-item-id');
+
+            // Chama uma função para adicionar o item ao carrinho
+            // mostrarToast()
+            adicionarAoCarrinho(itemId);
+
+        });
+    });
+
+    // Função para adicionar o item ao carrinho
+    function adicionarAoCarrinho(itemId) {
+        // Aqui você pode fazer o que precisar com o item, como adicionar ao carrinho
+        // e redirecionar para a página do carrinho
+        window.location.href = '../carrinhoCompras/carrinho.html?item=' + itemId;
+    }
+});
+
+function mostrarToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+
+    // Esconde o toast após 3 segundos
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+}

@@ -646,6 +646,15 @@ footer .last{
     .header-block .text p{
         font-size: 18px;
     }
+
+    .feature-text-content h3{
+        font-size: 16px;
+    }
+
+    .feature-text-content p{
+        margin-top: 0.4rem;
+        font-size: 14px;
+    }
 }
 
 /* JANELA MODAL */
