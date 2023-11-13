@@ -65,6 +65,7 @@ document.getElementById('numeroWhatsapp').addEventListener('change', function() 
 
     // Fechar o modal após a seleção do número
     document.getElementById('whatsappModal').style.display = 'none';
+    
 
     location.reload();
 });
