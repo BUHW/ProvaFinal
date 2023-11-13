@@ -128,5 +128,11 @@ document.getElementById("btn-porcas").addEventListener("click", function () {
     toggleDiv("content-porcas");
 });
 
+const btnMobile = document.getElementById('btnMobile');
 
+function toggleMenu(){
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active')
+}
 
+btnMobile.addEventListener('click', toggleMenu);
