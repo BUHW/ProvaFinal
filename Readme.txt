@@ -12,6 +12,7 @@ COISAS A TERMINAR
 COISAS FEITAS
 -=-=-=-=-=-=-=-=-=-==-=-=-=-==-=-=-=-=-=-=-=-==-=-=--=
 
-
+* Fazer Menu hamburguer
+* Terminar a resposividade para o celular
 
 -=-=-=-=-=-=-=-=-=-==-=-=-=-==-=-=-=-=-=-=-=-==-=-=--=
