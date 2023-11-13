@@ -629,6 +629,12 @@ footer .last{
         flex-direction: column;
         padding-left: 10%;
     }
+
+    .catalog .janela-modal .modal p{
+        max-height: 250px;
+        overflow-y: auto;
+        margin: 1rem 0;
+    }
 }
 
 @media(max-width: 480px){
