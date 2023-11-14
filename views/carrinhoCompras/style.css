@@ -44,6 +44,15 @@ nav {
   text-transform: uppercase;
 }
 
+.mobile-menu{
+  width: 100%;
+  display: flex;
+}
+
+.btn-mobile{
+  display: none;
+}
+
 .brand {
   width: auto;
   height: 50px;
@@ -246,4 +255,64 @@ aside > button {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 16;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 710px) {
+  .btn-mobile{
+      display: block;
+  }
+
+  .menu{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: var(--laranja);
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+  }
+
+  .btn-mobile{
+      background-color: transparent;
+      color: var(--laranja);
+      border: 2px solid var(--laranja);
+      border-radius: 5px;
+      width: 5rem;
+      padding: 0.5rem;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: .7s;
+  }
+
+  .btn-mobile:hover{
+      background-color: var(--laranja);
+      color: var(--azul);
+  }
+
+  #nav.active .menu{
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+
+  #nav.active .menu li a{
+      padding: 1rem 0;
+      margin: 0 1rem;
+      color: var(--azul);
+      font-size: 20px;
+      transition: .4s;
+  }
+
+  #nav.active .menu li a:hover{
+      color: white;
+  }
+
+  #nav.active .menu li a i{
+      margin-right: 0.5rem;
+  }
+}

@@ -137,30 +137,6 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu);
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Adiciona um ouvinte de evento a todos os botões com a classe 'adicionarCarrinhoBtn'
-    var adicionarCarrinhoBtns = document.querySelectorAll('.btn-add-carrinho');
-
-    adicionarCarrinhoBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (event) {
-            // Obtém o ID do item associado ao botão clicado
-            var itemId = event.currentTarget.getAttribute('data-item-id');
-
-            // Chama uma função para adicionar o item ao carrinho
-            // mostrarToast()
-            adicionarAoCarrinho(itemId);
-
-        });
-    });
-
-    // Função para adicionar o item ao carrinho
-    function adicionarAoCarrinho(itemId) {
-        // Aqui você pode fazer o que precisar com o item, como adicionar ao carrinho
-        // e redirecionar para a página do carrinho
-        window.location.href = '../carrinhoCompras/carrinho.html?item=' + itemId;
-    }
-});
-
 function mostrarToast() {
     const toast = document.getElementById("toast");
     toast.classList.add("show");
@@ -170,3 +146,28 @@ function mostrarToast() {
         toast.classList.remove("show");
     }, 3000);
 }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Adiciona um ouvinte de evento a todos os botões com a classe 'adicionarCarrinhoBtn'
+//     var adicionarCarrinhoBtns = document.querySelectorAll('.btn-add-carrinho');
+
+//     adicionarCarrinhoBtns.forEach(function (btn) {
+//         btn.addEventListener('click', function (event) {
+//             // Obtém o ID do item associado ao botão clicado
+//             var itemId = event.currentTarget.getAttribute('data-item-id');
+
+//             // Chama uma função para adicionar o item ao carrinho
+//             // mostrarToast()
+//             adicionarAoCarrinho(itemId);
+
+//         });
+//     });
+
+//     // Função para adicionar o item ao carrinho
+//     function adicionarAoCarrinho(itemId) {
+//         // Aqui você pode fazer o que precisar com o item, como adicionar ao carrinho
+//         // e redirecionar para a página do carrinho
+//         window.location.href = '../carrinhoCompras/carrinho.html?item=' + itemId;
+//     }
+// });
+
