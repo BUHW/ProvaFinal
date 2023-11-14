@@ -927,6 +927,10 @@ footer .last{
 
 @media(max-width: 480px){
 
+    .content .slider .slider-content .slide-box .header-block .text{
+        bottom: 14%;
+    }
+    
     .header-block .text h2{
         font-size: 22px;
     }
