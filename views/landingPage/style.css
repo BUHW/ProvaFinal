@@ -846,6 +846,7 @@ footer .last{
 
     .about-content .right{
         width: 100%;
+        
     }
 }
 
@@ -898,10 +899,17 @@ footer .last{
         width: none;
     }
 
+    .right h3{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
     .right p{
         width: 100%;
         margin: 0px;
-        text-align: left;
+        text-align: justify;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
     .features{
