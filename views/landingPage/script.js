@@ -93,3 +93,23 @@ function toggleMenu(){
 
 btnMobile.addEventListener('click', toggleMenu);
 
+// Carrossel
+
+var radio = document.getElementById('manual-btn');
+var cont = 1
+
+document.getElementById('radio1').checked = true  
+
+setInterval(() => {
+    proximaSection()
+}, 5000)
+
+function proximaSection(){
+    cont++
+
+    if(cont > 3){
+        cont = 1
+    }
+
+    document.getElementById('radio' + cont).checked = true 
+}
