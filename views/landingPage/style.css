@@ -910,6 +910,8 @@ footer .last{
         text-align: justify;
         margin: 0 auto;
         margin-bottom: 2rem;
+        word-spacing: 0.2px;
+        letter-spacing: 0.1px;
     }
 
     .features{
