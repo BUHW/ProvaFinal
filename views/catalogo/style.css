@@ -32,7 +32,7 @@ header {
     height: 450px;
 }
 
-span{
+span {
     color: var(--laranja);
 }
 
@@ -60,12 +60,12 @@ span{
     padding: 10px;
 }
 
-.mobile-menu{
+.mobile-menu {
     width: 100%;
     display: flex;
 }
 
-.btn-mobile{
+.btn-mobile {
     display: none;
 }
 
@@ -100,7 +100,7 @@ nav ul li {
     cursor: pointer;
 }
 
-nav ul li button{
+nav ul li button {
     width: 30px;
 }
 
@@ -182,7 +182,7 @@ nav ul button:hover {
 
 /* controll-btn */
 
-.controll-btn{
+.controll-btn {
     max-width: 1200px;
     padding-top: 150px;
     display: flex;
@@ -192,19 +192,19 @@ nav ul button:hover {
     margin-bottom: 3rem;
 }
 
-.controll-btn ul{
+.controll-btn ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.controll-btn ul li{
+.controll-btn ul li {
     list-style: none;
 
 }
 
-.controll-btn ul li button{
+.controll-btn ul li button {
     padding: 1rem;
     width: 11rem;
     margin-bottom: 1rem;
@@ -219,45 +219,45 @@ nav ul button:hover {
     font-size: 15px;
 }
 
-.controll-btn ul li button:hover{
+.controll-btn ul li button:hover {
     background-color: #0e2763;
 }
 
 /* catalogo */
 
-#content-inox{
+#content-inox {
     display: none;
 }
 
-#content-chato{
+#content-chato {
     display: none;
 }
 
-#content-brocante{
+#content-brocante {
     display: none;
 }
 
-#content-zin-branco{
+#content-zin-branco {
     display: none;
 }
 
-#content-zin-amarelo{
+#content-zin-amarelo {
     display: none;
 }
 
-#content-ponta-agulha{
+#content-ponta-agulha {
     display: none;
 }
 
-#content-maquina{
+#content-maquina {
     display: none;
 }
 
-#content-arruelas{
+#content-arruelas {
     display: none;
 }
 
-#content-porcas{
+#content-porcas {
     display: none;
 }
 
@@ -408,39 +408,39 @@ footer .main {
     min-height: 100px;
 }
 
-.footer-links h4{
+.footer-links h4 {
     margin-bottom: 10px;
     font-size: 25px;
 }
 
-.footer-links h6{
+.footer-links h6 {
     margin-bottom: 8px;
     font-size: 15px;
 }
 
-.socil-icons{
+.socil-icons {
     display: flex;
     flex-direction: column;
 }
 
-.footer-contact{
+.footer-contact {
     display: flex;
     flex-direction: column;
 }
 
-.main .footer-social a{
+.main .footer-social a {
     color: var(--azul);
     padding: 5px;
     text-decoration: none;
 }
 
-.main .footer-contact a{
+.main .footer-contact a {
     color: var(--azul);
     padding: 5px;
     text-decoration: none;
 }
 
-footer .last{
+footer .last {
     width: 100%;
     height: 50px;
     background: var(--azul);
@@ -452,28 +452,30 @@ footer .last{
 
 /* JANELA MODAL */
 
-.catalog .janela-modal{
+.catalog .janela-modal {
     width: 100vw;
     height: 100vh;
-    position: fixed; /* Use 'fixed' para cobrir a janela inteira */
+    position: fixed;
+    /* Use 'fixed' para cobrir a janela inteira */
     top: 0;
     left: 0;
-    background-color: #00000080; /* ou remova esta linha para o padrão transparente */
+    background-color: #00000080;
+    /* ou remova esta linha para o padrão transparente */
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 9999;
 }
 
-.catalog .janela-modal .modal h4{
+.catalog .janela-modal .modal h4 {
     margin: 15px 0px;
 }
 
-.catalog .janela-modal.abrir{
+.catalog .janela-modal.abrir {
     display: flex;
 }
 
-.catalog .modal{
+.catalog .modal {
     width: 60%;
     min-width: 300px;
     min-height: 200px;
@@ -481,14 +483,11 @@ footer .last{
     backdrop-filter: blur(15px);
     padding: 50px;
     border-radius: 20px;
-    margin: 0 auto; /* Centralizar horizontalmente */
+    margin: 0 auto;
+    /* Centralizar horizontalmente */
 }
 
-.catalog section{
-    display: flex;
-}
-
-.catalog .btn-cotacao{
+.catalog .btn-cotacao {
     width: 100%;
     margin-top: 2rem;
     padding: 1rem;
@@ -501,12 +500,12 @@ footer .last{
     cursor: pointer;
 }
 
-.catalog .btn-cotacao:hover{
+.catalog .btn-cotacao:hover {
     background-color: #0e2763;
 }
 
 
-.catalog .btn-add-carrinho{
+.catalog .btn-add-carrinho {
     width: 100%;
     margin-top: 2rem;
     padding: 1rem;
@@ -520,11 +519,11 @@ footer .last{
     margin-left: 1rem;
 }
 
-.catalog .btn-add-carrinho:hover{
+.catalog .btn-add-carrinho:hover {
     background-color: #0e2763;
 }
 
-.catalog .fechar{
+.catalog .fechar {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -538,19 +537,19 @@ footer .last{
     cursor: pointer;
 }
 
-@keyframes abrirmodal{
-    from{
+@keyframes abrirmodal {
+    from {
         opacity: 0;
         transform: translate3d(0, -20px, -5px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
 }
 
-.catalog .abrir .modal{
+.catalog .abrir .modal {
     animation: abrirmodal 0.5s;
 }
 
@@ -562,7 +561,7 @@ footer .last{
 
 /* botao whats */
 
-.whats{
+.whats {
     height: 70px;
     width: 70px;
     position: fixed;
@@ -578,13 +577,13 @@ footer .last{
     transition: all 0.5s;
 }
 
-.whats i{
+.whats i {
     font-size: 40px;
     color: white;
-    
+
 }
 
-.whats:hover{
+.whats:hover {
     height: 75px;
     width: 75px;
 }
@@ -620,7 +619,7 @@ footer .last{
     cursor: pointer;
 }
 
-.fechar-whats{
+.fechar-whats {
     margin-left: 1rem;
     text-decoration: none;
     color: var(--azul);
@@ -631,7 +630,7 @@ footer .last{
     transition: all 0.5s;
 }
 
-.fechar-whats:hover{
+.fechar-whats:hover {
     color: var(--laranja);
     border: 2px solid var(--laranja);
 }
@@ -661,12 +660,12 @@ footer .last{
 
 /* responsive */
 
-@media(max-width: 810px){
-    .header-block .text p{
+@media(max-width: 810px) {
+    .header-block .text p {
         font-size: 16px;
     }
 
-    .text{
+    .text {
         position: absolute;
         top: 10%;
         left: 15%;
@@ -674,11 +673,11 @@ footer .last{
 }
 
 @media screen and (max-width: 710px) {
-    .btn-mobile{
+    .btn-mobile {
         display: block;
     }
 
-    .menu{
+    .menu {
         display: block;
         position: absolute;
         width: 100%;
@@ -692,7 +691,7 @@ footer .last{
         overflow-y: hidden;
     }
 
-    .btn-mobile{
+    .btn-mobile {
         background-color: transparent;
         color: var(--laranja);
         border: 2px solid var(--laranja);
@@ -705,18 +704,18 @@ footer .last{
         transition: .7s;
     }
 
-    .btn-mobile:hover{
+    .btn-mobile:hover {
         background-color: var(--laranja);
         color: var(--azul);
     }
 
-    #nav.active .menu{
+    #nav.active .menu {
         height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
 
-    #nav.active .menu li a{
+    #nav.active .menu li a {
         padding: 1rem 0;
         margin: 0 1rem;
         color: var(--azul);
@@ -724,53 +723,59 @@ footer .last{
         transition: .4s;
     }
 
-    #nav.active .menu li a:hover{
+    #nav.active .menu li a:hover {
         color: white;
     }
 
-    #nav.active .menu li a i{
+    #nav.active .menu li a i {
         margin-right: 0.5rem;
     }
 }
 
-@media(max-width: 576px){
+@media(max-width: 576px) {
 
-    .text{
+    .text {
         position: absolute;
         bottom: 5%;
-        left: 15%; 
-          
+        left: 15%;
+
     }
 
-    section .filter-card{
+    .catalog .janela-modal .modal p {
+        max-height: 250px;
+        overflow-y: auto;
+        margin: 1rem 0;
+    }
+
+    section .filter-card {
         width: 350px;
         padding: 0px 10px;
     }
 
-    .search-input{
+    .search-input {
         max-width: 700px;
         min-width: 240px;
     }
 
-    .search-button{
+    .search-button {
         max-width: 150px;
         min-width: 80px;
     }
 
-    .about{
+    .about {
         margin-top: 100px;
     }
 
-    .title-wrapper-about{
+    .title-wrapper-about {
         margin-bottom: 10px;
     }
 
-    .about-content{
+    .about-content {
         flex-direction: column;
         height: 100%;
     }
 
-    .left{
+    .left {
         display: none;
     }
 
@@ -778,43 +783,43 @@ footer .last{
         width: none;
     }
 
-    .right p{
+    .right p {
         width: 100%;
         margin: 0px;
         text-align: left;
     }
 
-    .features{
+    .features {
         height: 100%;
     }
 
-    .features-card-block{
+    .features-card-block {
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    footer{
+    footer {
         height: 100%;
     }
 
-    footer .main{
+    footer .main {
         height: 100%;
     }
 
-    .footer-links{
+    .footer-links {
         flex-direction: column;
         padding-left: 10%;
     }
 }
 
-@media(max-width: 430px){
+@media(max-width: 430px) {
 
-    .header-block .text h2{
+    .header-block .text h2 {
         font-size: 20px;
     }
 
-    .header-block .text p{
+    .header-block .text p {
         font-size: 16px;
     }
 }
