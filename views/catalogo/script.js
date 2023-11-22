@@ -93,13 +93,6 @@ document.getElementById("btn-inox").addEventListener("click", function () {
     toggleDiv("content-inox");
 });
 
-document.getElementById("btn-chato").addEventListener("click", function () {
-    toggleDiv("content-chato");
-});
-
-document.getElementById("btn-brocante").addEventListener("click", function () {
-    toggleDiv("content-brocante");
-});
 
 document.getElementById("btn-zin-branco").addEventListener("click", function () {
     toggleDiv("content-zin-branco");
@@ -110,23 +103,6 @@ document.getElementById("btn-zin-amarelo").addEventListener("click", function ()
     toggleDiv("content-zin-amarelo");
 });
 
-
-document.getElementById("btn-ponta-agulha").addEventListener("click", function () {
-    toggleDiv("content-ponta-agulha");
-});
-
-
-document.getElementById("btn-maquina").addEventListener("click", function () {
-    toggleDiv("content-maquina");
-});
-
-document.getElementById("btn-arruelas").addEventListener("click", function () {
-    toggleDiv("content-arruelas");
-});
-
-document.getElementById("btn-porcas").addEventListener("click", function () {
-    toggleDiv("content-porcas");
-});
 
 const btnMobile = document.getElementById('btnMobile');
 
