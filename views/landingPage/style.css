@@ -118,6 +118,7 @@ section.slider{
 
 span{
     color: var(--laranja);
+    text-transform: uppercase;
 }
 
 .slider-content{
@@ -570,6 +571,10 @@ footer .last{
     align-items: center;
     justify-content: center;
     z-index: 9999;
+}
+
+.catalog .janela-modal .modal h1{
+    font-size: 30px;
 }
 
 .catalog .janela-modal .modal h4{

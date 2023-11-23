@@ -34,6 +34,8 @@ header {
 
 span {
     color: var(--laranja);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--azul);
 }
 
 .background-images {
@@ -229,42 +231,14 @@ nav ul button:hover {
     display: none;
 }
 
-#content-chato {
+#content-inox, 
+#content-zin-branco,
+#content-zin-amarelo,
+#content-aco,
+#content-ferragem,
+#content-bucha {
     display: none;
 }
-
-#content-brocante {
-    display: none;
-}
-
-#content-zin-branco {
-    display: none;
-}
-
-#content-zin-amarelo {
-    display: none;
-}
-
-#content-ponta-agulha {
-    display: none;
-}
-
-#content-maquina {
-    display: none;
-}
-
-#content-arruelas {
-    display: none;
-}
-
-#content-porcas {
-    display: none;
-}
-
-
-/* .catalog .content{
-    display: none;
-} */
 
 section .catalog {
     width: 100vw;
@@ -465,6 +439,10 @@ footer .last {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+}
+
+.catalog .janela-modal .modal h1{
+    font-size: 30px;
 }
 
 .catalog .janela-modal .modal h4 {

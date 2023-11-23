@@ -13,33 +13,53 @@ function abrirModal(numero) {
 
 // Btn buscar
 
+
+
 // Função para pesquisar os itens do catálogo
-const inputPesquisa = document.getElementById('search');
-const btnBusca = document.getElementById('btnBusca');
 
-function pesquisarCatalogo() {
-    const termoPesquisa = inputPesquisa.value.toLowerCase();
-    const catalogItems = document.querySelectorAll('.card-item');
+function configurarPesquisa(inputId, btnId) {
+    const inputPesquisa = document.getElementById(inputId);
+    const btnBusca = document.getElementById(btnId);
 
-    catalogItems.forEach(item => {
-        const titulo = item.querySelector('h3').textContent.toLowerCase();
+    function pesquisarCatalogo() {
+        const termoPesquisa = inputPesquisa.value.toLowerCase();
+        const catalogItems = document.querySelectorAll('.card-item');
 
-        if (titulo.includes(termoPesquisa)) {
-            item.classList.remove('oculto');
-        } else {
-            item.classList.add('oculto');
+        catalogItems.forEach(item => {
+            const titulo = item.querySelector('h3').textContent.toLowerCase();
+
+            if (titulo.includes(termoPesquisa)) {
+                item.classList.remove('oculto');
+            } else {
+                item.classList.add('oculto');
+            }
+        });
+    }
+
+    btnBusca.addEventListener('click', pesquisarCatalogo);
+
+    // Adicione um ouvinte de evento para capturar a tecla Enter pressionada
+    inputPesquisa.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            pesquisarCatalogo();
         }
     });
 }
 
-btnBusca.addEventListener('click', pesquisarCatalogo);
+// Configurar pesquisas individuais
+// pesquisa inox
+configurarPesquisa('search0', 'btnBusca0');
+// pesquisa zincado branco
+configurarPesquisa('search1', 'btnBusca1');
+// pesquisa zincado amarelo
+configurarPesquisa('search2', 'btnBusca2');
+// pesquisa aco
+configurarPesquisa('search3', 'btnBusca3');
+// pesquisa ferragens
+configurarPesquisa('search4', 'btnBusca4');
+// pesquisa buchas
+configurarPesquisa('search5', 'btnBusca5');
 
-// Adicione um ouvinte de evento para capturar a tecla Enter pressionada
-inputPesquisa.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        pesquisarCatalogo();
-    }
-});
 
 // botao whats
 
@@ -70,7 +90,7 @@ document.getElementById('numeroWhatsapp').addEventListener('change', function ()
 });
 
 
-// aparecer div
+// Trocar de conteudo
 
 var divAtualmenteVisivel = null;
 
@@ -93,16 +113,27 @@ document.getElementById("btn-inox").addEventListener("click", function () {
     toggleDiv("content-inox");
 });
 
-
 document.getElementById("btn-zin-branco").addEventListener("click", function () {
     toggleDiv("content-zin-branco");
-
 });
 
 document.getElementById("btn-zin-amarelo").addEventListener("click", function () {
     toggleDiv("content-zin-amarelo");
 });
 
+document.getElementById("btn-aco").addEventListener("click", function () {
+    toggleDiv("content-aco");
+});
+
+document.getElementById("btn-ferragem").addEventListener("click", function () {
+    toggleDiv("content-ferragem");
+});
+
+document.getElementById("btn-bucha").addEventListener("click", function () {
+    toggleDiv("content-bucha");
+});
+
+// menu humburguer
 
 const btnMobile = document.getElementById('btnMobile');
 
@@ -112,6 +143,8 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+
+// Toast
 
 function mostrarToast() {
     const toast = document.getElementById("toast");
