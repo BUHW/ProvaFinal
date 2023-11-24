@@ -722,7 +722,7 @@ footer .last{
 .modal-content {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     text-align: center;
 }
 
