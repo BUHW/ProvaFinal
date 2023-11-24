@@ -227,6 +227,10 @@ nav ul button:hover {
 
 /* catalogo */
 
+h3{
+    text-transform: uppercase;
+}
+
 #content-inox {
     display: none;
 }
@@ -247,7 +251,7 @@ section .catalog {
 }
 
 section .filter-card {
-    width: 1180px;
+    max-width: 1180px;
     height: 150px;
     background: var(--cinza);
     border-radius: 8px;
@@ -628,7 +632,7 @@ footer .last {
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.5s;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .toast.show {

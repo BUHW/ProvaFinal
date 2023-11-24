@@ -240,7 +240,7 @@ section .catalog {
 }
 
 section .filter-card {
-    width: 980px;
+    max-width: 980px;
     height: 150px;
     background: var(--cinza);
     border-radius: 8px;

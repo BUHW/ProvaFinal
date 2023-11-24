@@ -4,9 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="author" content="Victor Antonio Pereira" />
-        <meta name="description"
-            content="Parafuso, comercio de ferragens, ferragens, porcas, arruelas, barra roscada, atacado de Parafusos" />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <meta name="description" content="Parafuso, comercio de ferragens, ferragens, porcas, arruelas, barra roscada, atacado de Parafusos" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="../../img/FavIcon/favicon.ico" type="image/x-icon" />
@@ -22,7 +20,7 @@
                 <button id="btnMobile" class="btn-mobile">Menu</button>
                 <ul class="menu">
                     <li><a href="../../index.html">Pagina inicial</a></li>
-                    <li><a href="../../index.html#catalog">Catalogo</a></li>
+                    <li><a href="#catalog">Catalogo</a></li>
                     <li><a href="../../index.html#about">Sobre nós</a></li>
                     <li><a href="../../index.html#features">Recurso</a></li>
                     <li><a href="#contact">Contatos</a></li>
@@ -69,6 +67,8 @@
                 <li><button id="btn-bucha">Bucha</button></li>
             </ul>
         </section>
+
+        <section id="toast" class="toast"> <h3>item adicionado ao carrinho</h3> </section>
 
         <section class="catalog" id="inox">
             <section class="content" id="content-inox">
@@ -1683,34 +1683,10 @@
 
                 <section class="card-wrapper">
                     <section class="card-item">
-                        <img src="../../img/FotoParafusos/parafuso-chipboard.png" alt="parafuso" />
+                        <img src="../../img/FotoParafusos/BrocaSds.png" alt="Broca SDS" />
                         <section class="card-content">
-                            <h3>CHIPBOARD</h3>
-                            <p>
-                                chipboard: fixação eficaz para aglomerado e madeira compensada.
-                            </p>
-                            <button onclick="abrirModal(0)" class="btn" type="button">
-                                Tenho interesse
-                            </button>
-                        </section>
-                    </section>
-
-                    <section class="card-item">
-                        <img src="../../img/FotoParafusos/chato-zb.png" alt="CHATO ZB" />
-                        <section class="card-content">
-                            <h3>CHATO ZB</h3>
-                            <p>Parafuso chato ZB: cabeça plana e rosca autoperfurante.</p>
-                            <button onclick="abrirModal(1)" class="btn" type="button">
-                                Tenho interesse
-                            </button>
-                        </section>
-                    </section>
-
-                    <section class="card-item">
-                        <img src="../../img/FotoParafusos/chato-zb.png" alt="CHATO INOX" />
-                        <section class="card-content">
-                            <h3>CHATO INOX</h3>
-                            <p>Parafuso chato INOX: cabeça plana e rosca autoperfurante.</p>
+                            <h3>Broca sds</h3>
+                            <p>Broca SDS: Perfura concreto com martelo rotativo.</p>
                             <button onclick="abrirModal(2)" class="btn" type="button">
                                 Tenho interesse
                             </button>
@@ -1718,10 +1694,10 @@
                     </section>
 
                     <section class="card-item">
-                        <img src="../../img/FotoParafusos/PANELA.png" alt="PANELA ZB" />
+                        <img src="../../img/FotoParafusos/bits.png" alt="bits" />
                         <section class="card-content">
-                            <h3>PANELA ZB</h3>
-                            <p>O parafuso de panela zb garante durabilidade e resistência.</p>
+                            <h3>Bits</h3>
+                            <p>Bits: Peças para parafusar ou desparafusar parafusos.</p>
                             <button onclick="abrirModal(3)" class="btn" type="button">
                                 Tenho interesse
                             </button>
@@ -1729,11 +1705,11 @@
                     </section>
 
                     <section class="card-item">
-                        <img src="../../img/FotoParafusos/PANELA.png" alt="PANELA INOX" />
+                        <img src="../../img/FotoParafusos/brocaAco.png" alt="broca" />
                         <section class="card-content">
-                            <h3>PANELA INOX</h3>
+                            <h3>Broca aço rapido</h3>
                             <p>
-                                O parafuso de panela inox garante durabilidade e resistência.
+                                Broca aço rápido: Perfura metais, alta velocidade e resistência.
                             </p>
                             <button onclick="abrirModal(4)" class="btn" type="button">
                                 Tenho interesse
@@ -1742,13 +1718,37 @@
                     </section>
 
                     <section class="card-item">
-                        <img src="../../img/FotoParafusos/MAQUINA-PANELA-ZB.png" alt="MAQUYINA PANELA" />
+                        <img src="../../img/FotoParafusos/brocaChata.png" alt="Broca chata" />
                         <section class="card-content">
-                            <h3>MAQUINA PANELA ZB</h3>
+                            <h3>broca chata</h3>
                             <p>
-                                O parafuso de panela inox garante durabilidade e resistência.
+                                Broca chata: Usada para furos largos em madeira.
                             </p>
                             <button onclick="abrirModal(5)" class="btn" type="button">
+                                Tenho interesse
+                            </button>
+                        </section>
+                    </section>
+
+                    <section class="card-item">
+                        <img src="../../img/FotoParafusos/ventosaDupla.png" alt="ventosa dupla" />
+                        <section class="card-content">
+                            <h3>VENTOSA DUPLA</h3>
+                            <p>
+                                Ventosa dupla: dispositivo que adere superfícies através do vácuo.
+                            </p>
+                            <button onclick="abrirModal(0)" class="btn" type="button">
+                                Tenho interesse
+                            </button>
+                        </section>
+                    </section>
+
+                    <section class="card-item">
+                        <img src="../../img/FotoParafusos/ventosaTripla.png" alt="ventosa tripla" />
+                        <section class="card-content">
+                            <h3>VENTOSA TRIPLA</h3>
+                            <p> Ventosa tripla: dispositivo que adere superfícies através do vácuo.</p>
+                            <button onclick="abrirModal(1)" class="btn" type="button">
                                 Tenho interesse
                             </button>
                         </section>
