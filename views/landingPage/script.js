@@ -36,41 +36,40 @@ btnBusca.addEventListener('click', pesquisarCatalogo);
 
 // Adicione um ouvinte de evento para capturar a tecla Enter pressionada
 inputPesquisa.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter') {    
         pesquisarCatalogo();
     }
 });
 
-function whatsapp() {
-    // botao whats
+// botao whats
 
-    document.getElementById('whatsappIcon').addEventListener('click', function () {
-        // Mostrar o modal quando o ícone do WhatsApp for clicado
-        document.getElementById('whatsappModal').style.display = 'block';
-    });
+document.getElementById('whatsappIcon').addEventListener('click', function () {
+    // Mostrar o modal quando o ícone do WhatsApp for clicado
+    document.getElementById('whatsappModal').style.display = 'block';
+});
 
-    document.getElementById('closeModal').addEventListener('click', function () {
-        // Fechar o modal quando o botão "Fechar" for clicado
-        document.getElementById('whatsappModal').style.display = 'none';
-    });
+document.getElementById('closeModal').addEventListener('click', function () {
+    // Fechar o modal quando o botão "Fechar" for clicado
+    document.getElementById('whatsappModal').style.display = 'none';
+});
 
-    document.getElementById('numeroWhatsapp').addEventListener('change', function () {
-        var selectedNumber = this.value;
-        var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
-        var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
+document.getElementById('numeroWhatsapp').addEventListener('change', function () {
+    var selectedNumber = this.value;
+    var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
+    var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
 
-        // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
-        var whatsappIcon = document.getElementById('whatsappIcon');
-        whatsappIcon.setAttribute('href', whatsappLink);
-        window.open(whatsappLink, '_blank');
+    // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
+    var whatsappIcon = document.getElementById('whatsappIcon');
+    whatsappIcon.setAttribute('href', whatsappLink);
+    window.open(whatsappLink, '_blank');
 
-        // Fechar o modal após a seleção do número
-        document.getElementById('whatsappModal').style.display = 'none';
+    // Fechar o modal após a seleção do número
+    document.getElementById('whatsappModal').style.display = 'none';
 
 
-        location.reload();
-    });
-}
+    location.reload();
+});
+
 
 //função para mostrar o toast
 

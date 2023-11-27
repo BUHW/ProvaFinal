@@ -84,6 +84,15 @@ document.getElementById('numeroWhatsapp').addEventListener('change', function ()
     location.reload();
 });
 
+function mostrarToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+
+    // Esconde o toast após 3 segundos
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 5000);
+}
 
 // Trocar de conteudo
 
