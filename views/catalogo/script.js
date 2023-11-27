@@ -57,20 +57,20 @@ configurarPesquisa('search4', 'btnBusca4');
 // pesquisa buchas
 configurarPesquisa('search5', 'btnBusca5');
 
-// Função para mostrar o modal do WhatsApp
-function showWhatsAppModal() {
+// botao whats
+document.getElementById('whatsappIcon').addEventListener('click', function () {
+    // Mostrar o modal quando o ícone do WhatsApp for clicado
     document.getElementById('whatsappModal').style.display = 'block';
-}
+});
 
-// Função para fechar o modal do WhatsApp
-function closeWhatsAppModal() {
+document.getElementById('closeModal').addEventListener('click', function () {
+    // Fechar o modal quando o botão "Fechar" for clicado
     document.getElementById('whatsappModal').style.display = 'none';
-}
+});
 
-// Função para atualizar o link do WhatsApp e abrir em uma nova aba
-function updateWhatsAppLink() {
-    var selectedNumber = document.getElementById('numeroWhatsapp').value;
-    var text = "Olá, tudo bem? Gostaria de fazer um orçamento!";
+document.getElementById('numeroWhatsapp').addEventListener('change', function () {
+    var selectedNumber = this.value;
+    var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
     var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
 
     // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
@@ -79,13 +79,11 @@ function updateWhatsAppLink() {
     window.open(whatsappLink, '_blank');
 
     // Fechar o modal após a seleção do número
-    closeWhatsAppModal();
-}
+    document.getElementById('whatsappModal').style.display = 'none';
 
-// Adicionar event listeners aos elementos correspondentes
-document.getElementById('whatsappIcon').addEventListener('click', showWhatsAppModal);
-document.getElementById('closeModal').addEventListener('click', closeWhatsAppModal);
-document.getElementById('numeroWhatsapp').addEventListener('change', updateWhatsAppLink);
+    location.reload();
+});
+
 
 // Trocar de conteudo
 
