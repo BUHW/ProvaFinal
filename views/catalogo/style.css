@@ -409,12 +409,14 @@ footer .main {
 .main .footer-social a {
     color: var(--azul);
     padding: 5px;
+    padding: 20px 0px;
     text-decoration: none;
 }
 
 .main .footer-contact a {
     color: var(--azul);
     padding: 5px;
+    padding: 20px 0px;
     text-decoration: none;
 }
 
@@ -691,10 +693,19 @@ footer .last {
         color: var(--azul);
     }
 
-    #nav.active .menu {
-        height: calc(100vh - 70px);
+    #nav.active .menu{
+        height: calc(80vh - 70px);
+        width: 100%;
         visibility: visible;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    #nav.active .menu li{
+        padding: 1.5rem;
     }
 
     #nav.active .menu li a {
