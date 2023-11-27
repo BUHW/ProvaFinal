@@ -12,9 +12,6 @@ function abrirModal(numero) {
 }
 
 // Btn buscar
-
-
-
 // Função para pesquisar os itens do catálogo
 
 function configurarPesquisa(inputId, btnId) {
@@ -60,22 +57,20 @@ configurarPesquisa('search4', 'btnBusca4');
 // pesquisa buchas
 configurarPesquisa('search5', 'btnBusca5');
 
-
-// botao whats
-
-document.getElementById('whatsappIcon').addEventListener('click', function () {
-    // Mostrar o modal quando o ícone do WhatsApp for clicado
+// Função para mostrar o modal do WhatsApp
+function showWhatsAppModal() {
     document.getElementById('whatsappModal').style.display = 'block';
-});
+}
 
-document.getElementById('closeModal').addEventListener('click', function () {
-    // Fechar o modal quando o botão "Fechar" for clicado
+// Função para fechar o modal do WhatsApp
+function closeWhatsAppModal() {
     document.getElementById('whatsappModal').style.display = 'none';
-});
+}
 
-document.getElementById('numeroWhatsapp').addEventListener('change', function () {
-    var selectedNumber = this.value;
-    var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
+// Função para atualizar o link do WhatsApp e abrir em uma nova aba
+function updateWhatsAppLink() {
+    var selectedNumber = document.getElementById('numeroWhatsapp').value;
+    var text = "Olá, tudo bem? Gostaria de fazer um orçamento!";
     var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
 
     // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
@@ -84,11 +79,13 @@ document.getElementById('numeroWhatsapp').addEventListener('change', function ()
     window.open(whatsappLink, '_blank');
 
     // Fechar o modal após a seleção do número
-    document.getElementById('whatsappModal').style.display = 'none';
+    closeWhatsAppModal();
+}
 
-    location.reload();
-});
-
+// Adicionar event listeners aos elementos correspondentes
+document.getElementById('whatsappIcon').addEventListener('click', showWhatsAppModal);
+document.getElementById('closeModal').addEventListener('click', closeWhatsAppModal);
+document.getElementById('numeroWhatsapp').addEventListener('change', updateWhatsAppLink);
 
 // Trocar de conteudo
 
@@ -146,15 +143,15 @@ btnMobile.addEventListener('click', toggleMenu);
 
 // Toast
 
-function mostrarToast() {
-    const toast = document.getElementById("toast");
-    toast.classList.add("show");
+// function mostrarToast() {
+//     const toast = document.getElementById("toast");
+//     toast.classList.add("show");
 
-    // Esconde o toast após 3 segundos
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 3000);
-}
+//     // Esconde o toast após 3 segundos
+//     setTimeout(() => {
+//         toast.classList.remove("show");
+//     }, 3000);
+// }
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     // Adiciona um ouvinte de evento a todos os botões com a classe 'adicionarCarrinhoBtn'

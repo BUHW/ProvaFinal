@@ -41,34 +41,36 @@ inputPesquisa.addEventListener('keydown', function (event) {
     }
 });
 
-// botao whats
+function whatsapp() {
+    // botao whats
 
-document.getElementById('whatsappIcon').addEventListener('click', function() {
-    // Mostrar o modal quando o ícone do WhatsApp for clicado
-    document.getElementById('whatsappModal').style.display = 'block';
-});
+    document.getElementById('whatsappIcon').addEventListener('click', function () {
+        // Mostrar o modal quando o ícone do WhatsApp for clicado
+        document.getElementById('whatsappModal').style.display = 'block';
+    });
 
-document.getElementById('closeModal').addEventListener('click', function() {
-    // Fechar o modal quando o botão "Fechar" for clicado
-    document.getElementById('whatsappModal').style.display = 'none';
-});
+    document.getElementById('closeModal').addEventListener('click', function () {
+        // Fechar o modal quando o botão "Fechar" for clicado
+        document.getElementById('whatsappModal').style.display = 'none';
+    });
 
-document.getElementById('numeroWhatsapp').addEventListener('change', function() {
-    var selectedNumber = this.value;
-    var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
-    var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
-    
-    // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
-    var whatsappIcon = document.getElementById('whatsappIcon');
-    whatsappIcon.setAttribute('href', whatsappLink);
-    window.open(whatsappLink, '_blank');
+    document.getElementById('numeroWhatsapp').addEventListener('change', function () {
+        var selectedNumber = this.value;
+        var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
+        var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
 
-    // Fechar o modal após a seleção do número
-    document.getElementById('whatsappModal').style.display = 'none';
-    
+        // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba
+        var whatsappIcon = document.getElementById('whatsappIcon');
+        whatsappIcon.setAttribute('href', whatsappLink);
+        window.open(whatsappLink, '_blank');
 
-    location.reload();
-});
+        // Fechar o modal após a seleção do número
+        document.getElementById('whatsappModal').style.display = 'none';
+
+
+        location.reload();
+    });
+}
 
 //função para mostrar o toast
 
@@ -86,7 +88,7 @@ function mostrarToast() {
 
 const btnMobile = document.getElementById('btnMobile');
 
-function toggleMenu(){
+function toggleMenu() {
     const nav = document.getElementById('nav');
     nav.classList.toggle('active')
 }
@@ -98,18 +100,18 @@ btnMobile.addEventListener('click', toggleMenu);
 var radio = document.getElementById('manual-btn');
 var cont = 1
 
-document.getElementById('radio1').checked = true  
+document.getElementById('radio1').checked = true
 
 setInterval(() => {
     proximaSection()
 }, 5000)
 
-function proximaSection(){
+function proximaSection() {
     cont++
 
-    if(cont > 3){
+    if (cont > 3) {
         cont = 1
     }
 
-    document.getElementById('radio' + cont).checked = true 
+    document.getElementById('radio' + cont).checked = true
 }
