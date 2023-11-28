@@ -48,9 +48,19 @@ document.getElementById('whatsappIcon').addEventListener('click', function () {
     document.getElementById('whatsappModal').style.display = 'block';
 });
 
-document.getElementById('closeModal').addEventListener('click', function () {
-    // Fechar o modal quando o botão "Fechar" for clicado
-    document.getElementById('whatsappModal').style.display = 'none';
+const fecharModal = document.getElementById('closeModal')
+const whatsappModal = document.getElementById('whatsappModal');
+
+fecharModal.addEventListener('click', (e) => {
+    if (e.target.id == 'closeModal' || e.target.id == 'whatsappModal') {
+        document.getElementById('whatsappModal').style.display = 'none';
+    }
+});
+
+whatsappModal.addEventListener('click', (e) => {
+    if (e.target.id == 'closeModal' || e.target.id == 'whatsappModal') {
+        document.getElementById('whatsappModal').style.display = 'none';
+    }
 });
 
 document.getElementById('numeroWhatsapp').addEventListener('change', function () {
