@@ -65,7 +65,7 @@ whatsappModal.addEventListener('click', (e) => {
 
 document.getElementById('numeroWhatsapp').addEventListener('change', function () {
     var selectedNumber = this.value;
-    var text = "Olá, tudo bem? Estou interessado nos demais produtos!";
+    var text = "Olá, tudo bem? Gostaria de fazer um orçamento!";
     var whatsappLink = "https://wa.me/" + selectedNumber + "?text=" + encodeURIComponent(text);
 
     // Atualizar o link do WhatsApp no ícone com o atributo target para abrir em uma nova aba

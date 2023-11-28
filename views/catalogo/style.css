@@ -447,6 +447,7 @@ footer .last {
 
 .catalog .janela-modal .modal h1{
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .catalog .janela-modal .modal h4 {
@@ -546,8 +547,8 @@ footer .last {
     height: 70px;
     width: 70px;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 20px;
+    right: 22px;
     z-index: 9999;
     background-color: #0dc043;
     border-radius: 50%;
