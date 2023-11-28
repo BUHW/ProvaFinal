@@ -498,7 +498,6 @@ footer .last {
     background-color: var(--azul);
     transition: all 0.2s;
     cursor: pointer;
-    margin-left: 1rem;
 }
 
 .catalog .btn-add-carrinho:hover {
@@ -655,6 +654,15 @@ footer .last {
 }
 
 @media screen and (max-width: 710px) {
+
+    .toast{
+        width: 80%;
+    }
+
+    .toast h3{
+        font-size: 14px;
+    }
+
     .btn-mobile {
         display: block;
     }

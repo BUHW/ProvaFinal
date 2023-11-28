@@ -22,7 +22,6 @@
 html,
 body {
     width: 100%;
-    overflow-x: hidden;
 }
 
 header {
@@ -637,7 +636,6 @@ footer .last{
     background-color: var(--azul);
     transition: all 0.2s;
     cursor: pointer;
-    margin-left: 1rem;
 }
 
 .catalog .btn-add-carrinho:hover{
@@ -782,6 +780,11 @@ footer .last{
 /* responsive */
 
 @media screen and (max-width: 710px) {
+
+    .toast h3{
+        font-size: 14px;
+    }
+
     .btn-mobile{
         display: block;
     }
