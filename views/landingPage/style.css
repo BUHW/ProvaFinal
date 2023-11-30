@@ -539,14 +539,12 @@ footer .main {
 .main .footer-social a{
     color: var(--azul);
     padding: 5px;
-    padding: 20px 0px;
     text-decoration: none;
 }
 
 .main .footer-contact a{
     color: var(--azul);
     padding: 5px;
-    padding: 20px 0px;
     text-decoration: none;
 }
 
@@ -803,6 +801,14 @@ footer .last{
         display: flex;
         justify-content: flex-end;
         padding-right: 0.5rem;
+    }
+
+    .main .footer-social a{
+        padding: 20px 0px;
+    }
+
+    .main .footer-contact a{
+        padding: 20px 0px;
     }
 
     /* menu hamburguer */
